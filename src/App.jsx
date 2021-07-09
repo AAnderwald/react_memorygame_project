@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Board from "./Board";
+import Gameboard from "./Gameboard";
 import Card from "./Card";
 import "./App.css";
 
@@ -22,8 +22,9 @@ class App extends Component {
 
       <div>
         <h2>Test your brain</h2>
-        <Board/>
+        <Gameboard/>
       </div>
+
 
       </main>
     );

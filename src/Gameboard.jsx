@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import Card from "./Card";
-import './Board.css';
+import './Gameboard.css';
 import { render } from "@testing-library/react";
 
 
-
-class Board extends React.Component {
+class Gameboard extends React.Component {
  constructor (props) {
     super (props)
 
@@ -13,12 +12,15 @@ class Board extends React.Component {
         '❤️',
         '✨',
         '🐶',
-        '🦝',
+        '🦄',
         '🐺',
         '🍂',
         '🧄',
         '🥰 ',
+        '💡',
+        '🏖️',
     ]
+
 const deck = fronts
     .concat(fronts)
     .sort(() => Math.random() - 0.5) 
@@ -66,10 +68,9 @@ const deck = fronts
                 }, 1000)
             }
         }
-
         this.flipCardTo(cardIdx, !this.state.deck[cardIdx].faceUp)
     }
-     
+
     render () {
         return (
         this.state.deck.map((f, i) => {
@@ -85,5 +86,4 @@ const deck = fronts
     }
 }
 
-
-export default Board;
+export default Gameboard;

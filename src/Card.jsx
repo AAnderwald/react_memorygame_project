@@ -1,12 +1,7 @@
 import React, { Component } from "react";
 import "./Card.css";
 
-function flip(card){
-
-}
-
 class Card extends React.Component {
-
 
     render(){
         let content;
@@ -22,8 +17,5 @@ class Card extends React.Component {
         )
     }
 }
-
-
-
 
 export default Card;

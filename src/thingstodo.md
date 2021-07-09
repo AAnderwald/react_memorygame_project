@@ -1,6 +1,4 @@
 put a picture on these instead of a color.  if remember and see this later instead of the color of the card in card.css
-faceUp to cardUp
-board to BoardGame
 
 props are the property of a component
 
