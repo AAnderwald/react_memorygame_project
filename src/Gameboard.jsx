@@ -9,16 +9,19 @@ class Gameboard extends React.Component {
     super (props)
 
     const fronts = [
-        '❤️',
-        '✨',
-        '🐶',
-        '🦄',
-        '🐺',
-        '🍂',
-        '🧄',
-        '🥰 ',
-        '💡',
-        '🏖️',
+       "./1_donnakeep.jpg",
+       "./2_rose.jpg",
+       "./3_marthakeep.jpg",
+       "./4_mickeyuse.jpg",
+       "./5_river.jpg",
+       "./6_jack.jpg",
+       "./7_sara.jpg",
+       "./8_daleks.jpg",
+       "./9_sonicscrewdriver.jpg",
+       "./10_insidetardis.jpg",
+       "./12_drwho.jpg",
+       "./13_jackie.jpg",
+    
     ]
 
 const deck = fronts

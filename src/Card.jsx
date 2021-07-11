@@ -11,8 +11,8 @@ class Card extends React.Component {
             content = 'Memory Game'
         }
         return (
-            <div onClick={this.props.flip} className={`Card ${this.props.faceUp ? 'face-up': ''}`} > 
-            {content}
+            <div onClick={this.props.flip} className={`Card ${this.props.faceUp ? 'face-up': ''}`} style={ this.props.faceUp ? {backgroundImage: `url(${content})`} : null }> 
+        
             </div>  
         )
     }
