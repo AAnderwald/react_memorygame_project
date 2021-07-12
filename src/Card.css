@@ -3,7 +3,7 @@
     border:2px solid black;
     height: 150px;
     width: 150px;
-    background-color: rgb(119, 24, 24);
+    /* background: linear-gradient(#4F1418, #D04524,#cf6121, #F5BA60, #eedabd); */
     margin: 20px;
     text-align: center;
     color: white; 
@@ -11,6 +11,10 @@
     transition: transform 0.5s;
     padding: 20px;
     border-radius: 10%;
+    background: url(logodrwho.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
 }
 
 .Card.face-up {
@@ -21,6 +25,4 @@
     background-position-x: center;
     
 }
-
-
 

@@ -1,4 +1,11 @@
 /* Add custom styling here */
 body {
-    background-color: rgb(250, 222, 185);
+    background: linear-gradient(70deg, #101727, #273B56);
 }
+
+h1, h2 {
+    color: rgb(182, 226, 211);
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+ 

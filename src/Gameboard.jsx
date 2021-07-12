@@ -2,13 +2,14 @@ import React, { Component } from "react";
 import Card from "./Card";
 import './Gameboard.css';
 import { render } from "@testing-library/react";
-
+import "./Gameboard.css";
 
 class Gameboard extends React.Component {
  constructor (props) {
     super (props)
 
-    const fronts = [
+    const fronts = 
+    [
        "./1_donnakeep.jpg",
        "./2_rose.jpg",
        "./3_marthakeep.jpg",
@@ -24,20 +25,24 @@ class Gameboard extends React.Component {
     
     ]
 
-const deck = fronts
-    .concat(fronts)
-    .sort(() => Math.random() - 0.5) 
-    .map (f => {
-        return {
-            content: f,
-            faceUp: false,
+    
+
+    const deck = fronts
+        .concat(fronts)
+        .sort(() => Math.random() - 0.5) 
+        .map (f => {
+            return {
+                content: f,
+                faceUp: false,
+            }
+        })
+        this.state = {
+            deck: deck,
+            firstCard: null,
         }
-    })
-    this.state = {
-        deck: deck,
-        firstCard: null,
-    }
+      
  }
+
 
     flipCardTo (cardIdx, faceUp) {
         this.setState({
@@ -54,7 +59,6 @@ const deck = fronts
         })
     }
 
- 
     flip (cardIdx) {
         if (this.state.firstCard === null) {
             this.setState({ firstCard: cardIdx });
@@ -78,7 +82,7 @@ const deck = fronts
         return (
         this.state.deck.map((f, i) => {
       
-            return ( <div className="Board">  
+            return ( <div className="Board" >  
                 <Card 
                     flip={() => {this.flip(i)}} 
                     content={f.content} 
